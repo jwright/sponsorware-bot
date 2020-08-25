@@ -1,8 +1,8 @@
 {
   "name": "sponsorware-bot",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "private": true,
-  "description": "Automates actions based on activity from your GitHub Sponsors. :moneybag:",
+  "description": "Automates actions based on activity from your GitHub Sponsors. 💰",
   "author": "Jamie Wright <jamie@brilliantfantastic.com>",
   "license": "ISC",
   "repository": "https://github.com/jwright/sponsorware-bot.git",

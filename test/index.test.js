@@ -18,5 +18,14 @@ describe('Sponsorship Bot', () => {
           expect(response.text).toMatch(process.env.WEBHOOK_SECRET)
         })
     })
+
+    test('renders the webhook url', async() => {
+      await request(probot.server).get('/post-install')
+        .set('Host', 'blah.com')
+        .expect(200)
+        .then(response => {
+          expect(response.text).toMatch('http://blah.com')
+        })
+    })
   })
 })

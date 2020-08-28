@@ -11,7 +11,7 @@ describe('Sponsorship Bot', () => {
   })
 
   describe('GET /post-install', () => {
-    test('renders the webhook secret', async() => {
+    test('renders the webhook secret', async () => {
       await request(probot.server).get('/post-install')
         .expect(200)
         .then(response => {
@@ -19,7 +19,7 @@ describe('Sponsorship Bot', () => {
         })
     })
 
-    test('renders the webhook url', async() => {
+    test('renders the webhook url', async () => {
       await request(probot.server).get('/post-install')
         .set('Host', 'blah.com')
         .expect(200)

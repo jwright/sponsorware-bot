@@ -1,6 +1,29 @@
-<h1>You're Ready to Take On Sponsors</h1>
-<h2>Follow these steps to automate</h2>
-<ul>
-  <li>{{ webhookUrl }}</li>
-  <li>{{ webhookSecret }}</li>
-</ul>
+<div class="flex justify-center items-center">
+  <div class="m-8">
+    <h1 class="pt-8 text-black text-center text-2xl tracking-wide uppercase">You're Ready to Take On Sponsors</h1>
+    <h2 class="text-black text-center text-md text-opacity-25 tracking-wide uppercase">Follow these steps to automate your sponsorships</h2>
+    <div class="mt-8 grid grid-cols-1">
+      <div class="px-2 py-4 border-solid border border-black border-opacity-25 inline">
+        <div class="mb-4 -mt-4 flex justify-between relative">
+          <div class="text-black text-opacity-25">001</div>
+          <div class="text-black text-opacity-75 uppercase">Add new Webhook</div>
+        </div>
+        <div><a href="#">Add a Sponsor Webhook</a></div>
+      </div>
+      <div class="px-2 py-4 border-solid border border-black border-opacity-25 inline">
+        <div class="mb-4 -mt-4 flex justify-between relative">
+          <div class="text-black text-opacity-25">002</div>
+          <div class="text-black text-opacity-75 uppercase">Set your Payload URL</div>
+        </div>
+        <div>{{ webhookUrl }}</div>
+      </div>
+      <div class="px-2 py-4 border-solid border border-black border-opacity-25 inline">
+        <div class="mb-4 -mt-4 flex justify-between relative">
+          <div class="text-black text-opacity-25">003</div>
+          <div class="text-black text-opacity-75 uppercase">Set your Secret</div>
+        </div>
+        <div>{{ webhookSecret }}</div>
+      </div>
+    </div>
+  </div>
+</div>

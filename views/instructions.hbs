@@ -14,16 +14,26 @@
       <div class="px-2 py-4 border-solid border border-black border-opacity-25 inline">
         <div class="mb-4 -mt-4 flex justify-between relative">
           <div class="text-black text-opacity-25">002</div>
-          <div class="text-black text-opacity-75 uppercase">Set your Payload URL</div>
+          <div class="text-black text-opacity-75 uppercase">Set the Payload URL</div>
         </div>
-        <div>{{ webhookUrl }}</div>
+        <div>
+          <code class="p-2 bg-black bg-opacity-75 text-linen">{{ webhookUrl }}</code>
+        </div>
+        <div class="mt-8">
+          <img class="w-56 h-auto opacity-75" src="images/payload-content-placeholder.png" alt="Payload URL Content Placeholder" />
+        </div>
       </div>
       <div class="px-2 py-4 border-solid border border-black border-opacity-25 inline">
         <div class="mb-4 -mt-4 flex justify-between relative">
           <div class="text-black text-opacity-25">003</div>
-          <div class="text-black text-opacity-75 uppercase">Set your Secret</div>
+          <div class="text-black text-opacity-75 uppercase">Set the Secret</div>
         </div>
-        <div>{{ webhookSecret }}</div>
+        <div>
+          <code class="p-2 bg-black bg-opacity-75 text-linen">{{ webhookSecret }}</code>
+        </div>
+        <div class="mt-8">
+          <img class="w-56 h-auto opacity-75" src="images/secret-content-placeholder.png" alt="Secret Content Placeholder" />
+        </div>
       </div>
     </div>
   </div>

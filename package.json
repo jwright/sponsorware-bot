@@ -11,24 +11,32 @@
   "keywords": [
     "probot",
     "github",
-    "probot-app"
+    "probot-app",
+    "sponsorware"
   ],
   "scripts": {
     "dev": "nodemon",
+    "build": "npm run build:css",
+    "build:css": "postcss styles/tailwind.css -o public/css/styles.css",
     "start": "probot run ./index.js",
     "lint": "standard --fix",
     "test": "jest && standard",
     "test:watch": "jest --watch --notify --notifyMode=change --coverage"
   },
   "dependencies": {
-    "probot": "^9.5.3"
+    "express-handlebars": "^5.1.0",
+    "probot": "^9.5.3",
+    "tailwindcss": "^1.7.5"
   },
   "devDependencies": {
     "jest": "^24.9.0",
     "nock": "^12.0.0",
     "nodemon": "^2.0.0",
+    "postcss": "^7.0.32",
+    "postcss-cli": "^7.1.1",
     "smee-client": "^1.1.0",
-    "standard": "^14.3.1"
+    "standard": "^14.3.1",
+    "supertest": "^4.0.2"
   },
   "engines": {
     "node": ">= 8.3.0"

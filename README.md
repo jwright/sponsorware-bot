@@ -54,7 +54,19 @@ npm start
 
 ## DEPLOYMENT
 
-TBD
+This application is deployed on Heroku at [sponsorware-bot](https://dashboard.heroku.com/apps/sponsorware-bot).
+
+The application can be deployed by just using git. You need to add the remote to the Heroku instance.
+
+```
+git remote add production https://git.heroku.com/sponsorware-bot.git
+```
+
+Then you can simply push the lastest to deploy the application.
+
+```
+git push production master
+```
 
 ## RELEASING
 

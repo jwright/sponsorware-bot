@@ -1,0 +1,78 @@
+<div class="mb-24 flex justify-center items-center">
+  <div class="m-8">
+    <img class="mx-auto h-48 w-48 rounded-full" src="https://placem.at/things?w=250&h=250" alt="Sponsorware Logo" />
+    <p class="mt-2 text-center text-black text-opacity-25 uppercase">
+    Sponsorware Bot says
+    <span class="animate-ping">.</span><span class="animate-ping">.</span><span class="animate-ping">.</span>
+    </p>
+    <h1 class="pt-8 text-black text-center text-2xl tracking-wide uppercase">You're Ready to Take On Sponsors</h1>
+    <h2 class="text-black text-center text-md text-opacity-25 tracking-wide uppercase">Follow these steps to automate your sponsorships</h2>
+    <div class="mt-8 grid grid-cols-1">
+      <div class="px-2 py-4 border-solid border border-black border-opacity-25 inline">
+        <div class="mb-4 -mt-4 flex justify-between relative">
+          <div class="text-black text-opacity-25">001</div>
+          <div class="text-black text-opacity-75 uppercase">Add new Webhook</div>
+        </div>
+        <p class="max-w-sm mb-4 text-sm text-gray-800">
+          Create a webhook with the values below for
+          <a class="underline" href="https://github.com/sponsors/accounts" target="_blank">any GitHub account</a>
+          that you would like to be sponsored for.
+        </p>
+        <div><a class="underline" href="https://docs.github.com/en/github/supporting-the-open-source-community-with-github-sponsors/configuring-webhooks-for-events-in-your-sponsored-account" target="_blank">Webhook for GitHub Sponsors Guide &rarr;</a></div>
+      </div>
+      <div class="px-2 py-4 border-solid border border-black border-opacity-25 inline">
+        <div class="mb-4 -mt-4 flex justify-between relative">
+          <div class="text-black text-opacity-25">002</div>
+          <div class="text-black text-opacity-75 uppercase">Set the Payload URL</div>
+        </div>
+        <div class="flex space-x-2">
+          <div>
+            <code class="p-2 bg-black bg-opacity-75 text-linen">{{ webhookUrl }}</code>
+          </div>
+          <svg class="h-8 w-auto mt-4" viewBox="0 0 448 393" xmlns="http://www.w3.org/2000/svg">
+            <g id="Page-1" stroke="none" stroke-width="4" fill="none" fill-rule="evenodd">
+              <g class="stroke-current text-black" id="down-arrow" fill-rule="nonzero">
+                <path d="M253.254,393.02 L58.883,198.617 L186.461,198.617 C189.03,179.377 192.761,123.696 158.295,80.923 C127.838,43.109 75.132,23.942 1.666,23.942 L0,6.547 C1.252,6.319 31.214,0.621 72.962,0.621 C161.068,0.621 309.593,26.576 325.045,198.617 L447.64,198.617 L253.254,393.02 Z" id="Path"></path>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div class="mt-4">
+          <img class="w-56 h-auto opacity-75" src="images/payload-content-placeholder.png" alt="Payload URL Content Placeholder" />
+        </div>
+      </div>
+      <div class="px-2 py-4 border-solid border border-black border-opacity-25 inline">
+        <div class="mb-4 -mt-4 flex justify-between relative">
+          <div class="text-black text-opacity-25">003</div>
+          <div class="text-black text-opacity-75 uppercase">Set the Content Type</div>
+        </div>
+        <div class="flex space-x-2">
+          <div>
+            <code class="p-2 bg-black bg-opacity-75 text-linen">application/json</code>
+          </div>
+        </div>
+      </div>
+      <div class="px-2 py-4 border-solid border border-black border-opacity-25 inline">
+        <div class="mb-4 -mt-4 flex justify-between relative">
+          <div class="text-black text-opacity-25">004</div>
+          <div class="text-black text-opacity-75 uppercase">Set the Secret</div>
+        </div>
+        <div class="flex space-x-2">
+          <div>
+            <code class="p-2 bg-black bg-opacity-75 text-linen">{{ webhookSecret }}</code>
+          </div>
+          <svg class="h-8 w-auto mt-4" viewBox="0 0 448 393" xmlns="http://www.w3.org/2000/svg">
+            <g id="Page-1" stroke="none" stroke-width="4" fill="none" fill-rule="evenodd">
+              <g class="stroke-current text-black" id="down-arrow" fill-rule="nonzero">
+                <path d="M253.254,393.02 L58.883,198.617 L186.461,198.617 C189.03,179.377 192.761,123.696 158.295,80.923 C127.838,43.109 75.132,23.942 1.666,23.942 L0,6.547 C1.252,6.319 31.214,0.621 72.962,0.621 C161.068,0.621 309.593,26.576 325.045,198.617 L447.64,198.617 L253.254,393.02 Z" id="Path"></path>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div class="mt-4">
+          <img class="w-56 h-auto opacity-75" src="images/secret-content-placeholder.png" alt="Secret Content Placeholder" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

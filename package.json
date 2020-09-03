@@ -16,6 +16,7 @@
   ],
   "scripts": {
     "dev": "nodemon",
+    "build": "npm run build:css",
     "build:css": "postcss styles/tailwind.css -o public/css/styles.css",
     "start": "probot run ./index.js",
     "lint": "standard --fix",

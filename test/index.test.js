@@ -6,7 +6,7 @@ describe('Sponsorship Bot', () => {
   let probot
 
   beforeEach(() => {
-    probot = new Probot({ id: 123, secret: 'something secret' })
+    probot = new Probot({ id: 123 })
     probot.load(app)
   })
 

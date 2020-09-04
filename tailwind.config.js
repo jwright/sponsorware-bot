@@ -3,10 +3,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'linen': '#faf0e6',
+        linen: '#faf0e6'
       }
-    },
+    }
   },
   variants: {},
-  plugins: [],
+  plugins: []
 }

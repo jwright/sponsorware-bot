@@ -12,6 +12,9 @@ describe('Sponsorship Bot', () => {
 
   describe('GET /post-install', () => {
     test('renders the webhook secret', async () => {
+      console.log("***************")
+      console.log("ENV", process.env.WEBHOOK_SECRET)
+      console.log("***************")
       await request(probot.server).get('/post-install')
         .expect(200)
         .then(response => {

@@ -65,7 +65,7 @@ git remote add production https://git.heroku.com/sponsorware-bot.git
 Then you can simply push the lastest to deploy the application.
 
 ```
-git push production master
+git push production main
 ```
 
 ## RELEASING
